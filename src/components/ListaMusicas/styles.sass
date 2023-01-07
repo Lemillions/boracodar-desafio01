@@ -1,0 +1,37 @@
+#containerLista
+  display: flex
+  flex-flow: column nowrap
+  width: calc( 100% - 300px )
+  height: 100%
+  background-color: #001337
+  overflow-y: auto
+
+.musicaContainer
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  height: 60px
+  padding: 5px
+  gap: 5px
+
+.imgMusica
+  width: 50px
+  height: 50px
+  object-fit: cover
+
+.infoMusica
+  display: flex
+  flex-flow: column
+
+.nomeMusica
+  color: white
+  font-weight: 700
+  font-size: 1rem
+
+.autorMusica
+  color: #c0c0c0
+
+@media only screen and ('max-width: 650px')
+  #containerLista
+    width: 100%
+    height: calc( 100% - 150px )
